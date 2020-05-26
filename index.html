@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+      /* To make ahero imagem see: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+      body {
+        background-image: url("homeBrackground.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        background-repeat: no-repeat;
+      }
+      body::before{
+        background-color: black;
+        opacity: 0.7;
+      }
+      nav {
+        background-color: #0eb4de;
+        background-blend-mode: multiply;
+        opacity: 0.7;
+      }
+      .container-fluid {
+        background-color: black;
+        opacity: 0.7;
+      }
+      .nav-item {
+        color: white;
+        font-weight: 500;
+        opacity: 1;
+      }
+      .main-title-transformacao {
+        text-align: center;
+        color: white;
+      }
+      .main-title-digital {
+        text-align: center;
+        color: white;
+      }
+      .main-title-gestao{
+        text-align: center;
+        color: white;
+      }
+      .main-title-description > p {
+        width: 60%;
+        max-width: 500px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Extra Small */
+      @media screen and (min-width: 0px){
+        .test{
+            border: #32b336 7px solid !important;
+        }
+        .main-title-description > p {
+          width: 80%;
+        }
+      }
+            /* Small */
+      @media screen and (min-width: 576px){
+        .test{
+            border: #ffa600 7px solid !important;
+        }
+      }
+
+      /* Medium*/
+      @media screen and (min-width: 768px){
+        .test{
+            border: #41a7ff 7px solid !important;
+        }
+      }
+
+      /* Large*/
+      @media screen and (min-width: 992px){
+        .test{
+            border: yellow 7px solid !important;
+        }
+      }
+
+      /* Extra large */
+      @media screen and (min-width: 1200px){
+        .test{
+            border: #ff0053 7px solid !important;
+        }
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">KM Brasil</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav ">
+            <a class="nav-item nav-link active" href="#">HALL DO EVENTO <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">PALESTRANTES</a>
+            <a class="nav-item nav-link" href="#">SALA 1</a>
+            <a class="nav-item nav-link" href="#">SALA 2</a>
+            <a class="nav-item nav-link" href="#">SALA 3</a>
+            <a class="nav-item nav-link" href="#">EXPOSITORES</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+          <div class="main-title">
+            <div class="main-title-transformacao">
+              <h2>TRANSFORMAÇÃO</h2>
+            </div>
+            <div class="main-title-digital">
+              <h1>DIGITAL</h1>
+            </div>
+            <div class="main-title-gestao">
+              <H3>E GESTÃO DO CONHECIMENTO</H3>
+            </div>
+          </div>
+        </div>
+
+        <div class="row main-title-description justify-content-center">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <h5>PROGRAMAÇÃO</h5>
+        </div>
+
+
+
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
