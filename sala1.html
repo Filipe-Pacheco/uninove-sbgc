@@ -97,6 +97,24 @@
       .player-description {
         color: white;
       }
+      .menu-lateral-list {
+        border: none;
+      }
+      .menu-lateral-item {
+        padding-bottom: none;
+      }
+      .menu-lateral-item.active {
+        background: rgba(211, 211, 211, 0.3);
+        background-blend-mode: multiply;
+        border: none;
+      }
+      .menu-lateral-item-sala {
+        
+      }
+      .menu-lateral-item-title {
+        
+      }
+
       /* Extra Small */
       @media screen and (min-width: 0px){
         .test{
@@ -158,12 +176,11 @@
           <div class="navbar-nav ">
             <a class="nav-item nav-link" href="index.html">HALL DO EVENTO <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#">PALESTRANTES</a>
-            <a class="nav-item nav-link active" href="#">SALA 1</a>
-            <a class="nav-item nav-link" href="#">SALA 2</a>
-            <a class="nav-item nav-link" href="#">SALA 3</a>
-            <a class="nav-item nav-link" href="#">SALA 4</a>
-            <a class="nav-item nav-link" href="#">SALA 5</a>
-            <a class="nav-item nav-link" href="#">EXPOSITORES</a>
+            <a class="nav-item nav-link active" href="sala1.html">SALA 1</a>
+            <a class="nav-item nav-link" href="sala1.html">SALA 2</a>
+            <a class="nav-item nav-link" href="sala1.html">SALA 3</a>
+            <a class="nav-item nav-link" href="sala1.html">SALA 4</a>
+            <a class="nav-item nav-link" href="sala1.html">SALA 5</a>
           </div>
         </div>
       </nav>
@@ -199,8 +216,6 @@
         }
       </script>
 
-      
-      
       <div class="container player-wrapper mt-md-5 mt-0 p-3">
         <div class="row">
 
@@ -211,38 +226,38 @@
             <div id="player"></div>
           </div>
 
-          <div class="col-md-4 order-md-1 justify-content-end">
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action active">
-                <span>SALA 1</span> <br>
-                PAINEL DE ABERTURA
+          <div class="col-md-4 order-md-1">
+            <div class="menu-lateral-list list-group ">
+              <a href="#" class="menu-lateral-item list-group-item list-group-item-action active">
+                <span class="menu-lateral-item-sala">SALA 1</span>
+                <h5 class="menu-lateral-item-title">PAINEL DE ABERTURA</h5>
               </a>
-              <a href="#" class="list-group-item list-group-item-action">
-                <span>SALA 2</span> <br>
-                TRILHA DE CASOS
+              <a href="#" class="menu-lateral-item list-group-item list-group-item-action">
+                <span class="menu-lateral-item-sala">SALA 2</span>
+                <h5 class="menu-lateral-item-title">TRILHA DE CASOS</h5>
               </a>
-              <a href="#" class="list-group-item list-group-item-action">
-                SALA 3 <br>
-                PLENÁRIAS
+              <a href="#" class="menu-lateral-item list-group-item list-group-item-action">
+                <span class="menu-lateral-item-sala">SALA 3</span>
+                <h5 class="menu-lateral-item-title">PLENÁRIAS</h5>
               </a>
-              <a href="#" class="list-group-item list-group-item-action">
-                SALA 4 <br>
-                HAIFA UNIVERSITY
+              <a href="#" class="menu-lateral-item list-group-item list-group-item-action">
+                <span class="menu-lateral-item-sala">SALA 4</span>
+                <h5 class="menu-lateral-item-title">HAIFA UNIVERSITY</h5>
               </a>
-              <a href="#" class="list-group-item list-group-item-action">
-                SALA 5 <br>
-                CONSÓRCIO DOUTORAL
+              <a href="#" class="menu-lateral-item list-group-item list-group-item-action">
+                <span class="menu-lateral-item-sala">SALA 5</span>
+                <h5 class="menu-lateral-item-title">CONSÓRCIO DOUTORAL</h5>
               </a>
             </div>
           </div>
         </div>
         
         <div class="row player-description">
-          <div class="col">
+          <div class="col mb-3 mt-2">
             <h6>VOCÊ ESTÁ ASSISTINDO:</h6>
             <h2>PAINEL DE ABERTURA</h2>
             <hr type="solid">
-            <p>Gestão do conhecimento é uma área relativamente nova e ainda em evolução, mas já há algum consenso sobre o que e como fazer. Desde 2013, a SBGC discute em suas comunidades de prática os fundamentos e as boas práticas da GC, visando à construção de um modelo de referência em GC. Esse modelo vem evoluindo e consolidando o que há de melhor nos programas de GC de organizações associadas e parceiras, e hoje serve como guia para quem enfrenta desafios de conhecimento. 
+            <p class="mb-1 mt-1">Gestão do conhecimento é uma área relativamente nova e ainda em evolução, mas já há algum consenso sobre o que e como fazer. Desde 2013, a SBGC discute em suas comunidades de prática os fundamentos e as boas práticas da GC, visando à construção de um modelo de referência em GC. Esse modelo vem evoluindo e consolidando o que há de melhor nos programas de GC de organizações associadas e parceiras, e hoje serve como guia para quem enfrenta desafios de conhecimento. 
             O que fazem as organizações de referência para cuidar de seu conhecimento? Quais os fundamentos de uma gestão do conhecimento efetiva? Como evoluir e atingir maturidade em GC?</p>
           </div>
         </div>
