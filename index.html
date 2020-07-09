@@ -25,7 +25,7 @@
         position: relative;
       }
       .hero-title {
-        padding-top: 50px
+        padding: 50px 0px
       }
       nav {
         background-color: #0eb4de;
@@ -45,6 +45,9 @@
       .navbar-brand {
         color: white;
         font-weight: 700;
+      }
+      .main-title {
+        width: 100%;
       }
       .main-title-transformacao > h2 {
         text-align: center;
@@ -92,6 +95,9 @@
         min-width: 250px;
         color: #000;
       }
+      .number-card {
+        background-color: blue;
+      }
       .btn-card {
         background-color: #41a7ff;
         border: none;
@@ -100,14 +106,28 @@
         padding: 10px 30px;
         font-weight: bold;
       }
-      .topo-card {
-        
+      .number-card-sala {
+        color: white;
+        font-weight: 800;
+        font-size: 1.3rem;
       }
-      .number-card {
-
+      .number-card-top {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
       }
       .title-card {
+        background-color: yellow;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .topo-card {
 
+      }
+      .title-card h6 {
+        font-weight: bold;
+        font-size: 1.5rem;
       }
 
       /* Extra Small */
@@ -188,7 +208,7 @@
                 <h2>TRANSFORMAÇÃO</h2>
               </div>
               <div class="main-title-digital">
-                <h1>FILIPE</h1>
+                <h1>DIGITAL</h1>
               </div>
               <div class="main-title-gestao">
                 <H3>E GESTÃO DO CONHECIMENTO</H3>
@@ -214,12 +234,13 @@
 
         <div class="row programacao-cards justify-content-center">
             <div class="col-10 col-md-8 col-lg-3 programacao-card m-1 ">
-              <div class="row topo-card m-2 justify-content-center">
-                <div class="number-card">
-                  SALA 1
+              <div class="row topo-card m-2">
+                <div class="col-2 number-card">
+                  <div class="number-card-sala">SALA</div>
+                  <div class="number-card-top">03</div>
                 </div>
-                <div class="title-card">
-                  PAINEL DE ABERTURA
+                <div class="col-8 title-card">
+                  <h6>PAINEL DE ABERTURA</h6>
                 </div>
               </div>
               <div class="row m-2 justify-content-center">
