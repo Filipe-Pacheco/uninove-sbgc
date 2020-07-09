@@ -92,14 +92,26 @@
       }
       .programacao-card {
         background-color: whitesmoke;
-        min-width: 250px;
+        min-width: 300px;
         color: #000;
+        margin: 5px 10px 10px 10px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0px;
       }
       .number-card {
-        background-color: blue;
+        background-color: #00acd5;
+        padding: 20px 0px;
+        max-width: 80px;
+        line-height: 30px;
+      }
+      .card-content-description {
+        text-align: justify;
+        padding: 10px 0px 20px 0px;
       }
       .btn-card {
-        background-color: #41a7ff;
+        background-color: #00acd5;
         border: none;
         border-radius: 10px;
         color:#fff;
@@ -107,27 +119,28 @@
         font-weight: bold;
       }
       .number-card-sala {
+        text-align: center;
         color: white;
-        font-weight: 800;
+        font-weight: 500;
         font-size: 1.3rem;
       }
       .number-card-top {
         color: white;
         text-align: center;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 3rem;
       }
       .title-card {
-        background-color: yellow;
-        text-align: center;
+        text-align: left;
         vertical-align: middle;
+        padding-top: 20px;
       }
       .topo-card {
-
+        margin-top: 0px !important;
       }
       .title-card h6 {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
 
       /* Extra Small */
@@ -164,12 +177,19 @@
         .test{
             border: yellow 7px solid !important;
         }
+        .programacao-card {
+          max-width: 330px;
+          margin: 5px 5px 10px 5px;
+        }
       }
 
       /* Extra large */
       @media screen and (min-width: 1200px){
         .test{
             border: #ff0053 7px solid !important;
+        }
+        .programacao-card {
+            max-width: 360px;
         }
       }
 
@@ -226,24 +246,24 @@
       <!--END HERO-->
       </div>
 
-      <div class="programacao-section container-fluid">
+      <div class="container-fluid programacao-section">
 
         <div class="row programacao-title justify-content-center">
           <h1>PROGRAMAÇÃO</h1>
         </div>
 
         <div class="row programacao-cards justify-content-center">
-            <div class="col-10 col-md-8 col-lg-3 programacao-card m-1 ">
+            <div class="col-10 col-md-8 programacao-card">
               <div class="row topo-card m-2">
-                <div class="col-2 number-card">
+                <div class="col number-card">
                   <div class="number-card-sala">SALA</div>
-                  <div class="number-card-top">03</div>
+                  <div class="number-card-top">01</div>
                 </div>
                 <div class="col-8 title-card">
                   <h6>PAINEL DE ABERTURA</h6>
                 </div>
               </div>
-              <div class="row m-2 justify-content-center">
+              <div class="row card-content-description m-2 justify-content-center">
                 Gestão do conhecimento é uma área relativamente nova e ainda em evolução, mas já há algum consenso sobre o que e como fazer. Desde 2013, a SBGC discute em suas comunidades de prática os fundamentos e as boas práticas da GC, visando à construção de um modelo de referência em GC. Esse modelo vem evoluindo e consolidando o que há de melhor nos programas de GC de organizações associadas e parceiras, e hoje serve como guia para quem enfrenta desafios de conhecimento. 
                 O que fazem as organizações de referência para cuidar de seu conhecimento? Quais os fundamentos de uma gestão do conhecimento efetiva? Como evoluir e atingir maturidade em GC?
               </div>
@@ -252,11 +272,17 @@
               </div>
             </div>
 
-            <div class="col-10 col-md-8 col-lg-3 programacao-card m-1 ">
-              <div class="row m-2 justify-content-center">
-                SALA 2 - TRILHA DE CASOS
+            <div class="col-10 col-md-8 programacao-card">
+              <div class="row topo-card m-2">
+                <div class="col number-card">
+                  <div class="number-card-sala">SALA</div>
+                  <div class="number-card-top">02</div>
+                </div>
+                <div class="col-8 title-card">
+                  <h6>TRILHA DE CASOS</h6>
+                </div>
               </div>
-              <div class="row m-2 justify-content-center">
+              <div class="row card-content-description m-2 justify-content-center">
                 Gestão do conhecimento é uma área relativamente nova e ainda em evolução, mas já há algum consenso sobre o que e como fazer. Desde 2013, a SBGC discute em suas comunidades de prática os fundamentos e as boas práticas da GC, visando à construção de um modelo de referência em GC. Esse modelo vem evoluindo e consolidando o que há de melhor nos programas de GC de organizações associadas e parceiras, e hoje serve como guia para quem enfrenta desafios de conhecimento. 
                 O que fazem as organizações de referência para cuidar de seu conhecimento? Quais os fundamentos de uma gestão do conhecimento efetiva? Como evoluir e atingir maturidade em GC?
               </div>
@@ -265,11 +291,17 @@
               </div>
             </div>
 
-            <div class="col-10 col-md-8 col-lg-3 programacao-card m-1 ">
-              <div class="row m-2 justify-content-center">
-                SALA 3 - PLENÁRIAS
+            <div class="col-10 col-md-8 programacao-card">
+              <div class="row topo-card m-2">
+                <div class="col number-card">
+                  <div class="number-card-sala">SALA</div>
+                  <div class="number-card-top">03</div>
+                </div>
+                <div class="col-8 title-card">
+                  <h6>PLENÁRIAS</h6>
+                </div>
               </div>
-              <div class="row m-2 justify-content-center">
+              <div class="row card-content-description m-2 justify-content-center">
                 Gestão do conhecimento é uma área relativamente nova e ainda em evolução, mas já há algum consenso sobre o que e como fazer. Desde 2013, a SBGC discute em suas comunidades de prática os fundamentos e as boas práticas da GC, visando à construção de um modelo de referência em GC. Esse modelo vem evoluindo e consolidando o que há de melhor nos programas de GC de organizações associadas e parceiras, e hoje serve como guia para quem enfrenta desafios de conhecimento. 
                 O que fazem as organizações de referência para cuidar de seu conhecimento? Quais os fundamentos de uma gestão do conhecimento efetiva? Como evoluir e atingir maturidade em GC?
               </div>
@@ -277,10 +309,12 @@
                 <button class="btn-card">ENTRAR NA SALA</button>
               </div>
             </div>
+
         </div>
+
         <div class="footer" style="height: 200px;">
-        
         </div>
+
       </div>
       
       
