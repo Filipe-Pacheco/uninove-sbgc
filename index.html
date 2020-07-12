@@ -8,15 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
-    <script src="https://kit.fontawesome.com/10d2f26f53.js" crossorigin="anonymous"></script>
-
+    <!--Custom CSS-->
+    <link rel="custom-stylesheet" type="text/css" href="style.css">
 
     <title>Hello, world!</title>
 
     <style>
 
-      /* To make ahero imagem see: https://www.w3schools.com/howto/howto_css_hero_image.asp */
       .blackground-hero{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("homeBrackground.jpg");
         height: 100vh;
@@ -27,14 +25,21 @@
         min-width: 100px;
       }
       .hero-title {
-        padding: 50px 0px
+        padding: 50px 0px;
       }
       nav {
-        background-color: #0eb4de;
+        z-index: 2;
+      }
+      .navbar {
+        background-color: rgb(14, 180, 222, 0.5);
         background-blend-mode: multiply;
-        opacity: 1;
         position: absolute;
-        z-index: 10;
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+      .navbar-brand {
+        font-size: 1.8rem;
       }
       .navbar-toggler-icon {
         color: white;
@@ -152,6 +157,10 @@
         font-weight: bold;
         font-size: 1.8rem;
       }
+      .card-content-description > span {
+        color: #005d75;
+        font-weight: bold;
+      }
 
       /* Extra Small */
       @media screen and (min-width: 0px){
@@ -220,7 +229,7 @@
         <span class="navbar-toggler-icon"></i></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav ">
+        <div class="navbar-nav">
           <a class="nav-item nav-link active" href="index.html">HALL DO EVENTO <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#">PALESTRANTES</a>
             <a class="nav-item nav-link" href="sala1.html">SALA 1</a>
@@ -299,17 +308,18 @@
                   <h6>TRILHA DE CASOS</h6>
                 </div>
               </div>
-              <div class="row card-content-description m-2 justify-content-center">
-                Rede Globo - Galeria Digital <br>
-                Cristiane Colamarco Resende Costa, Supervisora Executiva de Pesquisa <br>
+              <div class="row card-content-description m-2">
+                <span>Rede Globo - Galeria Digital</span> <br>
+                <b>Cristiane Colamarco Resende Costa</b>
+                <i>Supervisora Executiva de Pesquisa</i> <br>
                 <br>
-                ​​Hosp. Albert Einstein - Mapeamento e Geração de Conhecimento para Enfermeiros <br>
-                Débora Schettini da Silva Alves <br>
-                Enfermeira Sênior<br>
+                ​​<span>Hosp. Albert Einstein - Mapeamento e Geração de Conhecimento para Enfermeiros</span> <br>
+                <b>Débora Schettini da Silva Alves</b> <br>
+                <i>Enfermeira Sênior</i><br>
                 <br>
-                ​Anac - Papo ANACadêmico<br>
-                ​Marília Nunes Fernandes<br>
-                Coordenadora do Laboratório de Inovação <br>
+                ​<span>Anac - Papo ANACadêmico</span><br>
+                <b>Marília Nunes Fernandes</b>​<br>
+                <i>Coordenadora do Laboratório de Inovação</i><br>
               </div>
               <div class="row m-2 justify-content-center">
                 <button class="btn-card">ENTRAR NA SALA</button>
@@ -326,18 +336,18 @@
                   <h6>PLENÁRIAS</h6>
                 </div>
               </div>
-              <div class="row card-content-description m-2 justify-content-center">
-                Embraer - Gestão do Conhecimento nas Engenharias da Embraer<br>
-                José Eduardo Carara Junior<br>
-                Engineering Knowledge Management<br>
+              <div class="row card-content-description m-2">
+                <span>Embraer - Gestão do Conhecimento nas Engenharias da Embraer</span><br>
+                <b>José Eduardo Carara Junior</b><br>
+                <i>Engineering Knowledge Management</i><br>
                 <br>
-                Vale - Programa Doador de Memórias<br>
-                Rafael Castanhede<br>
-                Engenheiro da Gerência da Operação<br>
+                <span>Vale - Programa Doador de Memórias</span><br>
+                <b>Rafael Castanhede</b><br>
+                <i>Engenheiro da Gerência da Operação</i><br>
                 <br>
-                Metrô SP - Mapeamento de Conhecimento nas Engenharias do Metro-SP<br>
-                Argimiro Alvarez Ferreira<br>
-                Assessor da Diretoria de Engenharia e Construções​<br>
+                <span>Metrô SP - Mapeamento de Conhecimento nas Engenharias do Metro-SP</span><br>
+                <b>Argimiro Alvarez Ferreira</b><br>
+                <i>Assessor da Diretoria de Engenharia e Construções</i><br>
               </div>
               <div class="row m-2 justify-content-center">
                 <button class="btn-card">ENTRAR NA SALA</button>
