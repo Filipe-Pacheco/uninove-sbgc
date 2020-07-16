@@ -1,3 +1,212 @@
-* {
-    border: pink 1px solid;
-}
+.blackground-hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("homeBrackground.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-width: 100px;
+  }
+  .hero-title {
+    padding: 50px 0px;
+  }
+  nav {
+    z-index: 2;
+  }
+  .navbar {
+    background-color: rgb(14, 180, 222, 0.5);
+    background-blend-mode: multiply;
+    position: absolute;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+  .navbar-toggler-icon {
+    color: white;
+  }
+  .nav-item {
+    color: white ;
+    font-weight: 500;
+    opacity: 1;
+  }
+  .navbar-brand {
+    color: white;
+    font-weight: 700;
+  }
+  .main-title {
+    width: 100%;
+  }
+  .main-title-transformacao > h2 {
+    text-align: center;
+    color: white;
+    opacity: 1 !important;
+    font-weight: 100;
+    font-size: 3rem;
+  }
+  .main-title-digital > h1 {
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 20vw;
+  }
+  .main-title-gestao{
+    text-align: center;
+    color: white;
+  }
+  .main-title-description > p {
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+  }
+  .main-title-programacao {
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+  }
+  hr {
+    border: 1px solid #fff;
+    width: 80%
+  }
+  .programacao-section {
+    background-color: black;
+    background-size: cover;
+    color: white;
+    padding-bottom: 60px;
+  }
+  hr.solid {
+    border-top: 3px solid white;
+  }
+  .programacao-cards {
+    background-color: #000;
+    justify-content: center;
+    margin: 0px;
+  }
+  .programacao-card {
+    background-color: whitesmoke;
+    min-width: 300px;
+    color: #000;
+    margin: 5px 10px 10px 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+  }
+  .number-card {
+    background-color: #00acd5;
+    padding: 20px 0px;
+    max-width: 80px;
+    line-height: 30px;
+  }
+  .card-content-description {
+    text-align: justify;
+    padding: 10px 0px 20px 0px;
+  }
+  .btn-card-div {
+    position: relative;
+    bottom: 25px;
+  }
+  .btn-card {
+    background-color: #00acd5;
+    border: none;
+    border-radius: 10px;
+    color:#fff;
+    padding: 10px 30px;
+    font-weight: bold;
+  }
+  .number-card-sala {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  .number-card-top {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .title-card {
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 20px;
+  }
+  .topo-card {
+    margin-top: 0px !important;
+  }
+  .title-card h6 {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .card-content-description > span {
+    color: #005d75;
+    font-weight: bold;
+  }
+  .footer-content {
+    height: 60px;
+    color: #fff;
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgb(14, 180, 222, 0.5);
+    background-blend-mode: multiply;
+  }
+
+  /* Extra Small */
+  @media screen and (min-width: 0px){
+    .test{
+        border: #32b336 7px solid !important;
+    }
+    .main-title-digital > h1 {
+    font-size: 18vmin;
+    }
+    .main-title-transformacao > h2 {
+    font-size: 2rem;
+    }
+    .main-title-gestao > h3 {
+      font-size: 1.5rem;
+    }
+    .main-title-description > p {
+      width: 80%;
+    }
+    .hero-title {
+    padding-top: 200px
+    }
+  }
+        /* Small */
+  @media screen and (min-width: 576px){
+    .test{
+        border: #ffa600 7px solid !important;
+    }
+  }
+
+  /* Medium*/
+  @media screen and (min-width: 768px){
+    .test{
+        border: #41a7ff 7px solid !important;
+    }
+  }
+
+  /* Large*/
+  @media screen and (min-width: 992px){
+    .test{
+        border: yellow 7px solid !important;
+    }
+    .programacao-card {
+      max-width: 330px;
+      margin: 5px 5px 10px 5px;
+    }
+  }
+
+  /* Extra large */
+  @media screen and (min-width: 1200px){
+    .test{
+        border: #ff0053 7px solid !important;
+    }
+    .programacao-card {
+        max-width: 360px;
+    }
+  }
