@@ -14,7 +14,7 @@
     z-index: 2;
   }
   .navbar {
-    background-color: rgb(14, 180, 222, 0.5);
+    background-color: #1A3753;
     background-blend-mode: multiply;
     position: absolute;
     width: 100%;
@@ -153,6 +153,7 @@
     text-align: center;
     background-color: rgb(14, 180, 222, 0.5);
     background-blend-mode: multiply;
+    display: none !important;
   }
 
   /* Extra Small */
