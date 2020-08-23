@@ -13,8 +13,6 @@
 
     <title>Hello, world!</title>
 
-
-
   </head>
   <body>
     <div class="blackground-hero">
@@ -30,51 +28,36 @@
             <a class="nav-item nav-link" href="http://www.kmbrasil.org/palestrantes-2020">PALESTRANTES</a>
             <a class="nav-item nav-link" href="sala1.html">SALA 1</a>
             <a class="nav-item nav-link" href="sala2.html">SALA 2</a>
-            <a class="nav-item nav-link" href="sala3.html">SALA 3</a>
-            <a class="nav-item nav-link active" href="sala4.html">SALA 4</a>
+            <a class="nav-item nav-link active" href="sala3.html">SALA 3</a>
+            <a class="nav-item nav-link" href="sala4.html">SALA 4</a>
           </div>
         </div>
       </nav>
 
-      <script>
-        // 2. This code loads the IFrame Player API code asynchronously.
-        var tag = document.createElement('script');
-
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        // 3. This function creates an <iframe> (and YouTube player)
-        //    after the API code downloads.
-        var player;
-        function onYouTubeIframeAPIReady() {
-          player = new YT.Player('player', {
-            height: '100%',
-            width: '100%',
-            playerVars: { 'autoplay': 1, 'controls': 0 },
-            videoId: '5qap5aO4i9A',
-          });
-        }
-        var isPlaying = false;
-        function togglePlayer() {
-          if (isPlaying) {
-            player.pauseVideo();
-            isPlaying = false;
-          } else {
-            player.playVideo();
-            isPlaying = true;
-          }
-        }
-      </script>
-
-      <div class="container player-wrapper mt-md-5 mt-0 p-3">
-        <div class="row">
-
+      <div class="container player-wrapper mt-md-5 mt-0 p-3" >
+        <div class="row" id="janela">
           <div class="col-md-8 order-1 mb-4 mt-4">
-            <div onClick="togglePlayer()" class="teste-video">
-              Teste
+
+            <div onClick="togglePlayer()" class="row teste-video" id="overlay">
+              <div class="col p-5">
+                <div class="row justify-content-md-center">VÍDEO PAUSADO</div>
+                <div class="row justify-content-md-center">
+                  <img action="" onclick="togglePlayer()" src="icons/circle.svg" id="control-play2" height="170px">
+                </div>
+                <div class="row justify-content-md-center">VÍDEO PAUSADO</div>
+              </div>
             </div>
-            <div id="player"></div>
+
+            <div class="row" id="player"></div>
+
+            <div class="row control-bar">
+              <img onclick="togglePlayer()" src="icons/pause.svg" id="control-play" height="auto">
+              Control bar
+              <img onclick="toggleFullScreen();" src="icons/fullscreen.svg" id="control-play" height="auto">
+              <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+              </div>  
+            </div>
           </div>
 
           <div class="col-md-4 order-md-1">
@@ -87,11 +70,11 @@
                 <span class="menu-lateral-item-sala">SALA 2</span>
                 <h5 class="menu-lateral-item-title">Managing Knowledge (Inglês)</h5>
               </a>
-              <a href="sala3.html" class="menu-lateral-item list-group-item list-group-item-action">
+              <a href="sala3.html" class="menu-lateral-item list-group-item list-group-item-action active">
                 <span class="menu-lateral-item-sala">SALA 3</span>
                 <h5 class="menu-lateral-item-title">Managing Knowledge (Tradução)</h5>
               </a>
-              <a href="sala4.html" class="menu-lateral-item list-group-item list-group-item-action active">
+              <a href="sala4.html" class="menu-lateral-item list-group-item list-group-item-action">
                 <span class="menu-lateral-item-sala">SALA 4</span>
                 <h5 class="menu-lateral-item-title">HAIFA UNIVERSITY</h5>
               </a>
@@ -102,11 +85,12 @@
             </div>
           </div>
         </div>
+        
 
         <div class="row player-description">
           <div class="col mb-3 mt-2">
             <h6>VOCÊ ESTÁ ASSISTINDO:</h6>
-            <h2>PAINEL DE ABERTURA</h2>
+            <h2>PAINEL DE ABERTURA</h2>            
             <hr type="solid">
             <p class="mb-1 mt-1">Gestão do conhecimento é uma área relativamente nova e ainda em evolução, mas já há algum consenso sobre o que e como fazer. Desde 2013, a SBGC discute em suas comunidades de prática os fundamentos e as boas práticas da GC, visando à construção de um modelo de referência em GC. Esse modelo vem evoluindo e consolidando o que há de melhor nos programas de GC de organizações associadas e parceiras, e hoje serve como guia para quem enfrenta desafios de conhecimento.
             O que fazem as organizações de referência para cuidar de seu conhecimento? Quais os fundamentos de uma gestão do conhecimento efetiva? Como evoluir e atingir maturidade em GC?</p>
@@ -115,9 +99,8 @@
       </div>
     </div>
 
-
-
     <!-- Optional JavaScript -->
+    <script src="script-sala.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

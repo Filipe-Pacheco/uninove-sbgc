@@ -6,7 +6,7 @@ body {
 }
 
 .blackground-hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("homeBrackground.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("assets/homeBrackground.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -104,7 +104,7 @@ body {
     padding-top: 0px;
   }
   .number-card {
-    background-color: #0446D5;
+    background-color: #1A3753;
     padding: 20px 0px;
     max-width: 80px;
     line-height: 30px;
@@ -118,7 +118,7 @@ body {
     bottom: 25px;
   }
   .btn-card {
-    background-color: #0446D5;
+    background-color: #1A3753;
     border: none;
     border-radius: 10px;
     color:#fff;

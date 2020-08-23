@@ -8,168 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
-
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="sala-style.css">
 
     <title>Hello, world!</title>
 
-    <style>
-      /* To make ahero imagem see: https://www.w3schools.com/howto/howto_css_hero_image.asp */
-
-      @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
-
-
-
-      body {
-        font-family: 'Lato', sans-serif;
-        font-size: 1em;
-      }
-
-      .blackground-hero{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("asset2.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        background-repeat: no-repeat;
-      }
-      nav {
-        background-color: #1A3753;
-        background-blend-mode: multiply;
-        opacity: 1;
-      }
-      .container-fluid::before {
-        background-color: black;
-        opacity: 0.7;
-      }
-      .nav-item {
-        color: white ;
-        font-weight: 500;
-        opacity: 1;
-      }
-      .navbar-brand {
-        color: white;
-        font-weight: 700;
-      }
-      .main-title-transformacao > h2 {
-        text-align: center;
-        color: white;
-        opacity: 1 !important;
-        font-weight: 100;
-        font-size: 3rem;
-      }
-      .main-title-digital > h1 {
-        text-align: center;
-        color: white;
-        font-size: 7rem;
-        font-weight: 800;
-      }
-      .main-title-gestao{
-        text-align: center;
-        color: white;
-      }
-      .main-title-description > p {
-        width: 60%;
-        max-width: 500px;
-        text-align: center;
-        color: white;
-      }
-      .main-title-programacao {
-        width: 60%;
-        max-width: 500px;
-        text-align: center;
-        color: white;
-      }
-      .programacao-section {
-        background-color: black;
-        background-size: cover;
-        color: white;
-      }
-      hr {
-        border-top: 3px solid white;
-      }
-      .programacao-cards {
-        background-color: white;
-        justify-content: center;
-      }
-      .programacao-card {
-        background-color: #ff0053;
-        min-width: 250px;
-      }
-
-      .video-wrapper {
-        width: auto;
-      }
-      .player-wrapper {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
-        opacity: 1;
-      }
-      .player-description {
-        color: white;
-      }
-      .menu-lateral-list {
-        border: none;
-      }
-      .menu-lateral-item {
-        padding-bottom: none;
-      }
-      .menu-lateral-item.active {
-        background: rgba(211, 211, 211, 0.3);
-        background-blend-mode: multiply;
-        border: none;
-      }
-      .menu-lateral-item-sala {
-
-      }
-      .menu-lateral-item-title {
-
-      }
-
-      /* Extra Small */
-      @media screen and (min-width: 0px){
-        .test{
-            border: #32b336 7px solid !important;
-        }
-        .main-title-description > p {
-          width: 80%;
-        }
-      }
-            /* Small */
-      @media screen and (min-width: 576px){
-        .test{
-            border: #ffa600 7px solid !important;
-        }
-      }
-
-      /* Medium*/
-      @media screen and (min-width: 768px){
-        .test{
-            border: #41a7ff 7px solid !important;
-        }
-      }
-
-      /* Large*/
-      @media screen and (min-width: 992px){
-        .test{
-            border: yellow 7px solid !important;
-        }
-      }
-
-      /* Extra large */
-      @media screen and (min-width: 1200px){
-        .test{
-            border: #ff0053 7px solid !important;
-        }
-      }
-      .teste-video {
-        background-color: red;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 100;
-        opacity: 0;
-      }
-
-    </style>
 
 
   </head>
@@ -185,11 +28,10 @@
           <div class="navbar-nav ">
             <a class="nav-item nav-link" href="index.html">HALL DO EVENTO <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="http://www.kmbrasil.org/palestrantes-2020">PALESTRANTES</a>
-            <a class="nav-item nav-link active" href="sala1.html">SALA 1</a>
-            <a class="nav-item nav-link" href="sala2.html">SALA 2</a>
+            <a class="nav-item nav-link" href="sala1.html">SALA 1</a>
+            <a class="nav-item nav-link active" href="sala2.html">SALA 2</a>
             <a class="nav-item nav-link" href="sala3.html">SALA 3</a>
             <a class="nav-item nav-link" href="sala4.html">SALA 4</a>
-            <a class="nav-item nav-link" href="sala5.html">SALA 5</a>
           </div>
         </div>
       </nav>
@@ -237,11 +79,11 @@
 
           <div class="col-md-4 order-md-1">
             <div class="menu-lateral-list list-group ">
-              <a href="sala1.html" class="menu-lateral-item list-group-item list-group-item-action active">
+              <a href="sala1.html" class="menu-lateral-item list-group-item list-group-item-action">
                 <span class="menu-lateral-item-sala">SALA 1</span>
                 <h5 class="menu-lateral-item-title">PAINEL DE ABERTURA</h5>
               </a>
-              <a href="sala2.html" class="menu-lateral-item list-group-item list-group-item-action">
+              <a href="sala2.html" class="menu-lateral-item list-group-item list-group-item-action active">
                 <span class="menu-lateral-item-sala">SALA 2</span>
                 <h5 class="menu-lateral-item-title">Managing Knowledge (Inglês)</h5>
               </a>
