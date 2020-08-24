@@ -16,7 +16,7 @@
 
   </head>
   <body>
-    <p id="num-sala" style="display: none;">sala3</p>
+    <p id="num-sala" style="display: none;">sala1</p>
     <div class="blackground-hero">
 
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -43,10 +43,14 @@
             <div class="row" style="height: 90%;" id="janela">
               <div class="col-12 teste-video" onClick="togglePlayer()"  id="overlay">
                 <div class="col p-5">
-                  <div class="row justify-content-md-center">VÍDEO PAUSADO</div>
-                  <div class="row justify-content-md-center">
-                    <img action="" onclick="togglePlayer()" src="icons/circle.svg" id="control-play2">
+                  <div class="row justify-content-center"><p>VÍDEO PAUSADO</p></div>
+                  <div class="row justify-content-center" onclick="togglePlayer()"> 
+                    <svg class="play-icon" onclick="togglePlayer()" id="control-play2" viewBox="0 0 16 16" class="bi bi-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
                   </div>
+                  <p>Clique na tela para continuar assistindo</p>
                 </div>
               </div>
 
@@ -78,7 +82,7 @@
           <div class="col-md-4 order-md-1">
             <div class="menu-lateral-list list-group ">
               <a href="sala1.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-1">
-                <span class="menu-lateral-item-sala">SALA 1</span><img src="https://disease.sh/assets/img/flags/br.png" id="flag" width="30px">
+                <span class="menu-lateral-item-sala">SALA 1 </span><img src="https://disease.sh/assets/img/flags/br.png" id="flag" width="30px">
                 <h5 class="menu-lateral-item-title">Trilha de Casos Iniciativas de GC</h5>
               </a>
               <a href="sala2.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-2">
@@ -87,17 +91,17 @@
                   GC como Alicerce da Transformação Digital</h5>
               </a>
               <a href="sala3.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-3 active">
-                <span class="menu-lateral-item-sala">SALA 3</span>
+                <span class="menu-lateral-item-sala">SALA 3 </span>
                 <h5 class="menu-lateral-item-title">Managing Knowledge (Tradução)</h5>
               </a>
 
               <a href="sala4.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-4">
-                <span class="menu-lateral-item-sala">SALA 4</span>
+                <span class="menu-lateral-item-sala">SALA 4 </span>
                 <h5 class="menu-lateral-item-title">HAIFA UNIVERSITY</h5>
               </a>
               
               <a href="sala5.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-5">
-                <span class="menu-lateral-item-sala">SALA 5</span>
+                <span class="menu-lateral-item-sala">SALA 5 </span>
                 <h5 class="menu-lateral-item-title">CONSÓRCIO DOUTORAL</h5>
               </a>
             </div>

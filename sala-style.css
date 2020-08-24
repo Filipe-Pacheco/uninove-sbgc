@@ -99,6 +99,10 @@ hr {
     position: absolute;
     z-index: 100;
     opacity: 0;
+    color: #fff;
+    align-content: center;
+    font-size: 3rem;
+    text-align: center;
   }
 .control-bar {
     background-color: #fff;
@@ -121,6 +125,11 @@ hr {
 }
 #player-row{
   min-height: 420px;
+}
+.play-icon {
+  height: 3em;
+  width: 3em;
+  margin: 10px 0px;
 }
 .player-description {
   color: white;
@@ -161,6 +170,11 @@ hr {
   }
   .main-title-description > p {
     width: 80%;
+  }
+  .teste-video {
+    font-size: 1rem;
+  }
+  .play-icon {
   }
 }
       /* Small */
