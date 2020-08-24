@@ -2,9 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
-*{
-    border: red solid 1px;
-}
+
 
 body {
   font-family: 'Lato', sans-serif;
@@ -100,10 +98,22 @@ hr {
     height: 90%;
     position: absolute;
     z-index: 100;
-    opacity: 0.7;
+    opacity: 0;
   }
 .control-bar {
     background-color: #fff;
+}
+#volume-btn {
+    width: 20px;
+    height: 20px;
+}
+#control-play {
+    width: 20px;
+    height: 20px;
+}
+#fullscreen-btn {
+    width: 20px;
+    height: 20px;
 }
 .player-wrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
