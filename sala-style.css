@@ -119,6 +119,9 @@ hr {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
   opacity: 1;
 }
+#player-row{
+  min-height: 420px;
+}
 .player-description {
   color: white;
 }
@@ -131,6 +134,24 @@ hr {
 .menu-lateral-item.active {
   background: #1A3753;
   border: none;
+}
+.menu-lateral-item-sala {
+  font-weight: bold;
+}
+.ref-sala-1 {
+  display: reset;
+}
+.ref-sala-2 {
+  display: none;
+}
+.ref-sala-3 {
+  display: none;
+}
+.ref-sala-4 {
+  display: none;
+}
+.ref-sala-5 {
+  display: none;
 }
 
 /* Extra Small */
@@ -153,6 +174,9 @@ hr {
 @media screen and (min-width: 768px){
   .test{
       border: #41a7ff 7px solid !important;
+  }
+  .player-wrapper {
+    min-height: 720px;
   }
 }
 
