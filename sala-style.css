@@ -133,6 +133,7 @@ hr {
 }
 .player-description {
   color: white;
+  margin-top: 20px;
 }
 .menu-lateral-list {
   border: none;
