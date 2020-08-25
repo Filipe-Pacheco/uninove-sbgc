@@ -162,6 +162,21 @@ body {
     background-blend-mode: multiply;
     display: none !important;
   }
+  .ref-sala-1 {
+    display: reset;
+  }
+  .ref-sala-2 {
+    display: none;
+  }
+  .ref-sala-3 {
+    display: none;
+  }
+  .ref-sala-4 {
+    display: none;
+  }
+  .ref-sala-5 {
+    display: none;
+  }  
 
   /* Extra Small */
   @media screen and (min-width: 0px){
@@ -181,7 +196,7 @@ body {
       width: 80%;
     }
     .hero-title {
-    padding-top: 200px
+    padding-top: 130px
     }
   }
         /* Small */

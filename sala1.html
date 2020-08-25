@@ -16,99 +16,109 @@
 
   </head>
   <body>
+    <p id="num-sala" style="display: none;">sala1</p>
     <div class="blackground-hero">
 
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="/">KM Brasil</a>
+        <a class="navbar-brand" href="#">KM Brasil</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav ">
             <a class="nav-item nav-link" href="index.html">HALL DO EVENTO <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="http://www.kmbrasil.org/programa-descricao.html" target="_blank">PALESTRANTES</a>
-            <a class="nav-item nav-link active" href="sala1.html">SALA 1</a>
-            <a class="nav-item nav-link" href="sala2.html">SALA 2</a>
-            <a class="nav-item nav-link" href="sala3.html">SALA 3</a>
-            <a class="nav-item nav-link" href="sala4.html">SALA 4</a>
+            <a class="nav-item nav-link ref-sala-1" href="sala1.html">SALA 1</a>
+            <a class="nav-item nav-link" href="http://www.kmbrasil.org/palestrantes-2020">PALESTRANTES</a>
+            <a class="nav-item nav-link ref-sala-2" href="sala2.html">SALA 2</a>
+            <a class="nav-item nav-link ref-sala-3 active" href="sala3.html">SALA 3</a>
+            <a class="nav-item nav-link ref-sala-4" href="sala4.html">SALA 4</a>
           </div>
         </div>
       </nav>
 
-      <script>
-        // 2. This code loads the IFrame Player API code asynchronously.
-        var tag = document.createElement('script');
+      <div class="container player-wrapper mt-md-5 mt-0 p-3" >
+        <div class="row" id="player-row">
+          <div class="col-md-8 order-1 mt-4 player-wrap"  >
 
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            <div class="row" style="height: 90%;" id="janela">
+              <div class="col-12 teste-video" onClick="togglePlayer()"  id="overlay">
+                <div class="col">
+                  <div class="row justify-content-center"><p>VÍDEO PAUSADO</p></div>
+                  <div class="row justify-content-center" onclick="togglePlayer()"> 
+                    <svg class="play-icon" onclick="togglePlayer()" id="control-play2" viewBox="0 0 16 16" class="bi bi-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                  </div>
+                  <p>Clique na tela para continuar assistindo</p>
+                </div>
+              </div>
 
-        // 3. This function creates an <iframe> (and YouTube player)
-        //    after the API code downloads.
-        var player;
-        function onYouTubeIframeAPIReady() {
-          player = new YT.Player('player', {
-            height: '100%',
-            width: '100%',
-            playerVars: { 'autoplay': 1, 'controls': 0 },
-            videoId: '5qap5aO4i9A',
-          });
-        }
-        var isPlaying = false;
-        function togglePlayer() {
-          if (isPlaying) {
-            player.pauseVideo();
-            isPlaying = false;
-          } else {
-            player.playVideo();
-            isPlaying = true;
-          }
-        }
-      </script>
+              <div class="col-12" id="player">
+              </div>
 
-      <div class="container player-wrapper mt-md-5 mt-0 p-3">
-        <div class="row">
-
-          <div class="col-md-8 order-1 mb-4 mt-4">
-            <div onClick="togglePlayer()" class="teste-video">
-              Teste
+              <div class="col-12 control-bar" style="height: auto;">
+                <div class="row justify-content-center">
+                  <button class="btn btn-light">
+                      <img onclick="togglePlayer()" src="icons/pause.svg" id="control-play" height="auto">
+                  </button>
+                  <button class="btn btn-light">
+                    <img onclick="toggleMute();" src="icons/volume-on.svg" id="volume-btn">
+                  </button>
+                  <button class="btn btn-light">
+                    <input type="range" min="1" max="100" value="100" class="slider form-control-range" id="myRange">
+                  </button>
+                    <button class="btn btn-light">
+                    <img onclick="toggleFullScreen();" src="icons/fullscreen.svg" id="fullscreen-btn">
+                  </button>
+                </div>
+              </div>
             </div>
-            <div id="player"></div>
+            
+
+
+
+
           </div>
 
           <div class="col-md-4 order-md-1">
             <div class="menu-lateral-list list-group ">
-              <a href="sala1.html" class="menu-lateral-item list-group-item list-group-item-action active">
-                <span class="menu-lateral-item-sala">SALA 1</span>
-                <h5 class="menu-lateral-item-title">PAINEL DE ABERTURA</h5>
+              <a href="sala1.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-1">
+                <span class="menu-lateral-item-sala">SALA 1</span><img src="https://disease.sh/assets/img/flags/br.png" id="flag" width="30px">
+                <h5 class="menu-lateral-item-title">Trilha de Casos Iniciativas de GC</h5>
               </a>
-              <a href="sala2.html" class="menu-lateral-item list-group-item list-group-item-action">
-                <span class="menu-lateral-item-sala">SALA 2</span>
-                <h5 class="menu-lateral-item-title">Managing Knowledge (Inglês)</h5>
+              <a href="sala2.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-2">
+                <span class="menu-lateral-item-sala">SALA 2 <img src="https://disease.sh/assets/img/flags/us.png" id="flag" width="30px"></span>
+                <h5 class="menu-lateral-item-title"> Empresas Digitais 
+                  GC como Alicerce da Transformação Digital</h5>
               </a>
-              <a href="sala3.html" class="menu-lateral-item list-group-item list-group-item-action">
-                <span class="menu-lateral-item-sala">SALA 3</span>
+              <a href="sala3.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-3 active">
+                <span class="menu-lateral-item-sala">SALA 3 </span>
                 <h5 class="menu-lateral-item-title">Managing Knowledge (Tradução)</h5>
               </a>
-              <a href="sala4.html" class="menu-lateral-item list-group-item list-group-item-action">
-                <span class="menu-lateral-item-sala">SALA 4</span>
+
+              <a href="sala4.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-4">
+                <span class="menu-lateral-item-sala">SALA 4 </span>
                 <h5 class="menu-lateral-item-title">HAIFA UNIVERSITY</h5>
               </a>
-              <a href="sala5.html" class="menu-lateral-item list-group-item list-group-item-action">
-                <span class="menu-lateral-item-sala">SALA 5</span>
+              
+              <a href="sala5.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-5">
+                <span class="menu-lateral-item-sala">SALA 5 </span>
                 <h5 class="menu-lateral-item-title">CONSÓRCIO DOUTORAL</h5>
               </a>
             </div>
           </div>
         </div>
-
+        
+        <br>
         <div class="row player-description">
-          <div class="col mb-3 mt-2">
+          <div class="col mb-3 mt-4">
             <h6>VOCÊ ESTÁ ASSISTINDO:</h6>
-            <h2>PAINEL DE ABERTURA</h2>
+            <h2>Trilha de Casos Iniciativas de GC:</h2>            
             <hr type="solid">
-            <p class="mb-1 mt-1">Gestão do conhecimento é uma área relativamente nova e ainda em evolução, mas já há algum consenso sobre o que e como fazer. Desde 2013, a SBGC discute em suas comunidades de prática os fundamentos e as boas práticas da GC, visando à construção de um modelo de referência em GC. Esse modelo vem evoluindo e consolidando o que há de melhor nos programas de GC de organizações associadas e parceiras, e hoje serve como guia para quem enfrenta desafios de conhecimento.
-            O que fazem as organizações de referência para cuidar de seu conhecimento? Quais os fundamentos de uma gestão do conhecimento efetiva? Como evoluir e atingir maturidade em GC?</p>
+            <p class="mb-1 mt-1">Caso 1: Projeto GC na área de P&D da BRF S/A <br> 
+              Caso 2: Gestão do Conhecimento – Um olhar para a Fundação Oswaldo Cruz</p>
+            <button class="btn btn-info" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLScroHlGHnZvSfIDdxAu38MPdCTGYVd0HeKF8YncBDaeHoiLSQ/viewform','_blank')">Envie sua pergunta</button>
           </div>
         </div>
       </div>
@@ -117,6 +127,7 @@
 
 
     <!-- Optional JavaScript -->
+    <script src="script-sala.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

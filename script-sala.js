@@ -1,4 +1,35 @@
- // 2. This code loads the IFrame Player API code asynchronously.
+// Referenciando os links do Youtube
+var sala1 = "GzUpOyiQf0g";
+var sala2 = "kMfEvHIb0Js";
+var sala3 = "kMfEvHIb0Js";
+var sala4 = "kMfEvHIb0Js";
+
+// Obtendo a sala e aplicando os valores
+salaAtual = document.getElementById('num-sala').textContent;
+console.log("Você está na: " + salaAtual);
+var videoDaSala = "";
+
+switch (salaAtual){
+  case "sala1":
+    var videoDaSala = sala1;
+    console.log('O vídeo da sala é: ' + videoDaSala);
+    break;
+  case "sala2":
+    var videoDaSala = sala2;
+    console.log('O vídeo da sala é: ' + videoDaSala);
+    break;
+  case "sala3":
+    var videoDaSala = sala3;
+    console.log('O vídeo da sala é: ' + videoDaSala);
+    break;
+  case "sala4":
+    var videoDaSala = sala4;
+    console.log('O vídeo da sala é: ' + videoDaSala);
+    break;
+};
+
+
+// 2. This code loads the IFrame Player API code asynchronously.
  var tag = document.createElement('script');
 
  tag.src = "https://www.youtube.com/iframe_api";
@@ -12,7 +43,7 @@
      height: '100%',
      width: '100%',
      playerVars: { 'autoplay': 1, 'controls': 0 },
-     videoId: '7hNKdi_MWa0',
+     videoId: videoDaSala,
    });
  }
  var isPlaying = false;
@@ -77,18 +108,9 @@ slider.oninput = function() {
   player.setVolume(slider.value);
 }
 
-const btn0 = document.querySelector('#btn-0');
-const btn50 = document.querySelector('#btn-50');
-const btn100 = document.querySelector('#btn-100');
+// mute button
+//var volBtn = document.getElementById("volume-btn");
 
-btn0.addEventListener('click', () => {
-  player.setVolume(0);
-});
-
-btn50.addEventListener('click', () => {
-  player.setVolume(50);
-});
-
-btn100.addEventListener('click', () => {
-    player.setVolume(100);
-  });
+//function toggleMute(){
+//  slider.value = 0;
+//}

@@ -2,9 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
+
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 1em;
+  background-color: #202020;
 }
 
 .blackground-hero{
@@ -91,19 +94,46 @@ hr {
   width: auto;
 }
 .teste-video {
-    background-color: gray;
+    background-color: #1A3753;
     width: 100%;
-    height: 90%;
+    height: 100%;
     position: absolute;
     z-index: 100;
-    opacity: 0.7;
+    opacity: 0;
+    color: #fff;
+    align-content: center;
+    font-size: 3rem;
+    text-align: center;
   }
 .control-bar {
     background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+}
+#volume-btn {
+    width: 20px;
+    height: 20px;
+}
+#control-play {
+    width: 20px;
+    height: 20px;
+}
+#fullscreen-btn {
+    width: 20px;
+    height: 20px;
 }
 .player-wrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
   opacity: 1;
+}
+#player-row{
+  min-height: 420px;
+}
+.play-icon {
+  height: 3em;
+  width: 3em;
+  margin: 10px 0px;
 }
 .player-description {
   color: white;
@@ -118,6 +148,24 @@ hr {
   background: #1A3753;
   border: none;
 }
+.menu-lateral-item-sala {
+  font-weight: bold;
+}
+.ref-sala-1 {
+  display: reset;
+}
+.ref-sala-2 {
+  display: none;
+}
+.ref-sala-3 {
+  display: none;
+}
+.ref-sala-4 {
+  display: none;
+}
+.ref-sala-5 {
+  display: none;
+}
 
 /* Extra Small */
 @media screen and (min-width: 0px){
@@ -127,6 +175,13 @@ hr {
   .main-title-description > p {
     width: 80%;
   }
+  .teste-video {
+    font-size: 1rem;
+  }
+  .player-description {
+    margin-top: 30px;
+  }
+
 }
       /* Small */
 @media screen and (min-width: 576px){
@@ -139,6 +194,9 @@ hr {
 @media screen and (min-width: 768px){
   .test{
       border: #41a7ff 7px solid !important;
+  }
+  .player-wrapper {
+    min-height: 720px;
   }
 }
 
