@@ -133,7 +133,6 @@ hr {
 }
 .player-description {
   color: white;
-  margin-top: 20px;
 }
 .menu-lateral-list {
   border: none;
@@ -175,7 +174,11 @@ hr {
   .teste-video {
     font-size: 1rem;
   }
-  .play-icon {
+  .player-description {
+    margin-top: 30px;
+  }
+  * {
+    border: red 1px solid;
   }
 }
       /* Small */
