@@ -1,8 +1,8 @@
 // Referenciando os links do Youtube
-var sala1 = "GzUpOyiQf0g";
-var sala2 = "kMfEvHIb0Js";
-var sala3 = "kMfEvHIb0Js";
-var sala4 = "kMfEvHIb0Js";
+var sala1 = "jHGl5gwP_dI";
+var sala2 = "jHGl5gwP_dI";
+var sala3 = "jHGl5gwP_dI";
+var sala4 = "jHGl5gwP_dI";
 
 // Obtendo a sala e aplicando os valores
 salaAtual = document.getElementById('num-sala').textContent;
