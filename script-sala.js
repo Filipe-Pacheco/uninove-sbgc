@@ -1,5 +1,5 @@
 // Referenciando os links do Youtube
-var sala1 = "kMfEvHIb0Js";
+var sala1 = "GzUpOyiQf0g";
 var sala2 = "kMfEvHIb0Js";
 var sala3 = "kMfEvHIb0Js";
 var sala4 = "kMfEvHIb0Js";
@@ -108,18 +108,9 @@ slider.oninput = function() {
   player.setVolume(slider.value);
 }
 
-const btn0 = document.querySelector('#btn-0');
-const btn50 = document.querySelector('#btn-50');
-const btn100 = document.querySelector('#btn-100');
+// mute button
+//var volBtn = document.getElementById("volume-btn");
 
-btn0.addEventListener('click', () => {
-  player.setVolume(0);
-});
-
-btn50.addEventListener('click', () => {
-  player.setVolume(50);
-});
-
-btn100.addEventListener('click', () => {
-    player.setVolume(100);
-  });
+//function toggleMute(){
+//  slider.value = 0;
+//}
