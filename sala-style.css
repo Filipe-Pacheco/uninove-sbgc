@@ -106,6 +106,9 @@ hr {
   }
 .control-bar {
     background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
 }
 #volume-btn {
     width: 20px;
