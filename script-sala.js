@@ -1,5 +1,5 @@
 // Referenciando os links do Youtube
-var sala1 = "5qap5aO4i9A";
+var sala1 = "i6RJQdWo4_8";
 var sala2 = "i6RJQdWo4_8";
 var sala3 = "i6RJQdWo4_8";
 var sala4 = "i6RJQdWo4_8";
@@ -46,7 +46,9 @@ switch (salaAtual){
      videoId: videoDaSala,
    });
  }
- var isPlaying = false;
+ var isPlaying = true;
+
+// Para monitorar o status usamos: player.getPlayerState(), que retorna 1 em reprodução, 2 em pausa, 0 encerrado, -1 não iniciado e 3 quando estiver carregando (buffer).
  function togglePlayer() {
    if (isPlaying) {
      player.pauseVideo();
@@ -109,7 +111,6 @@ slider.oninput = function() {
 }
 
 // mute button
-
 var volBtn = document.getElementById("volume-btn");
 var volPrevious = '';
 
