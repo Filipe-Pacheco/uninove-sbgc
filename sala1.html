@@ -59,18 +59,18 @@
 
               <div class="col-12 control-bar" style="height: auto;">
                 <div class="row justify-content-center">
-                  <button class="btn btn-light">
-                      <img onclick="togglePlayer()" src="icons/pause.svg" id="control-play" height="auto">
+                  <button class="btn btn-light" onclick="togglePlayer()">
+                      <img src="icons/pause.svg" id="control-play" height="auto">
                   </button>
-                  <a class="btn btn-light">
-                    <img onclick="toggleMute();" src="icons/volume-on.svg" id="volume-btn">
+                  <a class="btn btn-light" onclick="toggleMute();">
+                    <img  src="icons/volume-on.svg" id="volume-btn">
                   </a>
                   <button class="btn btn-light">
-                    <input type="range" min="1" max="100" value="100" class="slider form-control-range" id="myRange">
+                    <input type="range" min="0" max="100" value="100" class="slider form-control-range" id="myRange">
+                  </button>
+                  <a class="btn btn-light" onclick="toggleFullScreen();">
+                  <img  src="icons/fullscreen.svg" id="fullscreen-btn">
                   </a>
-                    <button class="btn btn-light">
-                    <img onclick="toggleFullScreen();" src="icons/fullscreen.svg" id="fullscreen-btn">
-                    </a>
                 </div>
               </div>
             </div>

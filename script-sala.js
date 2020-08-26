@@ -1,5 +1,5 @@
 // Referenciando os links do Youtube
-var sala1 = "i6RJQdWo4_8";
+var sala1 = "5qap5aO4i9A";
 var sala2 = "i6RJQdWo4_8";
 var sala3 = "i6RJQdWo4_8";
 var sala4 = "i6RJQdWo4_8";
@@ -56,13 +56,12 @@ switch (salaAtual){
    } else {
      player.playVideo();
      isPlaying = true;
-     document.getElementById("control-play").src = "icons/pause.svg"
+     document.getElementById("control-play").src = "icons/pause.svg";
      document.getElementById('overlay').style.opacity = 0;
    }
  }
 
  //fullscreen mode
-var isFullScreen = false;
 var elem = document.getElementById("janela");
 
 function openFullscreen() {
@@ -89,13 +88,14 @@ function closeFullscreen() {
     }
   };
 
+// A expressão "document.fullscreenElement" referencia qual elemento está em fullscreen, caso nenhum elemento esteja em fullscreen, retorna null.
 function toggleFullScreen() {
-    if (isFullScreen) {
+    if (document.fullscreenElement) {
         closeFullscreen();
-        isFullScreen = false;
+        console.log("fechando fullscreen");
     } else {
         openFullscreen();
-        isFullScreen = true;
+        console.log("abrindo fullscreen");
     }
 }
 
@@ -109,8 +109,24 @@ slider.oninput = function() {
 }
 
 // mute button
-//var volBtn = document.getElementById("volume-btn");
 
-//function toggleMute(){
-//  slider.value = 0;
-//}
+var volBtn = document.getElementById("volume-btn");
+var volPrevious = '';
+
+function toggleMute(){
+  if (slider.value != "0"){
+    // Deixa mudo e guarda o valor de volume
+    volPrevious = slider.value;
+    slider.value = 0;
+    player.setVolume(slider.value);
+    document.getElementById('volume-btn').src = "icons/volume-mute.svg";
+    console.log("volume mudo, prev = " + volPrevious);
+  } else {
+    // Volta ao vaolor de volume anterior
+    slider.value = volPrevious;
+    player.setVolume(slider.value);
+    document.getElementById('volume-btn').src = "icons/volume-on.svg";
+    console.log("volume retorna ao anterior");
+  }
+}
+
