@@ -105,6 +105,7 @@ hr {
     font-size: 3rem;
     text-align: center;
   }
+
 .control-bar {
     background-color: #fff;
     position: absolute;
@@ -197,6 +198,9 @@ hr {
   }
   .player-wrapper {
     min-height: 720px;
+  }
+  .text-pause-video {
+    margin-top: 70px;
   }
 }
 
