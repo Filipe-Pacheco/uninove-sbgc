@@ -1,5 +1,5 @@
 // Referenciando os links do Youtube
-var sala1 = "lg_K63M656s";
+var sala1 = "_VwHJkhxznU";
 var sala2 = "lg_K63M656s";
 var sala3 = "lg_K63M656s";
 var sala4 = "lg_K63M656s";
@@ -42,7 +42,7 @@ switch (salaAtual){
    player = new YT.Player('player', {
      height: '100%',
      width: '100%',
-     playerVars: { 'autoplay': 1, 'controls': 0 },
+     playerVars: { 'autoplay': 1, 'controls': 1 },
      videoId: videoDaSala,
    });
  }
