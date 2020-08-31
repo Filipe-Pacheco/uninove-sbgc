@@ -167,6 +167,10 @@ hr {
 .ref-sala-5 {
   display: none;
 }
+.cards-deck-title {
+  font-weight: 700;
+  color: #1A3753;
+}
 
 /* Extra Small */
 @media screen and (min-width: 0px){

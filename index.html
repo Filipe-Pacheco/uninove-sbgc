@@ -11,6 +11,9 @@
     <!--Custom CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <!-- plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css"/>  
+
     <title>Hall Principal SBGC</title>
   </head>
 
@@ -62,6 +65,64 @@
 
       <!--END HERO-->
       </div>
+
+      <div class="container mb-5">
+
+        <div class="row mb-2 mt-4">
+          <h2 class="cards-deck-title" style="color: #1A3753; font-weight: 700;">Sessões anteriores:</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col mb-4">
+            <div class="card">
+              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/1.png" data-plyr-embed-id="GzUpOyiQf0g"></div>
+              <div class="card-body">
+                <h5 class="card-title">Trilha de Casos Iniciativas de GC</h5>
+                <p class="card-text">Caso 1: Projeto GC na área de P&D da BRF S/A
+                  <br>Caso 2: Gestão do Conhecimento - Um olhar para a Fundação Oswaldo Cruz</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/2.png" data-plyr-embed-id="i6RJQdWo4_8"></div>
+              <div class="card-body">
+                <h5 class="card-title">Trilha de Casos: Praticas de GC</h5>
+                <p class="card-text">Caso 1: Simulação - Petrobras Transporte S/A TRANSPETRO
+                  <br>Caso 2: Lições Aprendidas - Itaguai Construções Navais S.A (ICN)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/3.png" data-plyr-embed-id="lg_K63M656s"></div>
+              <div class="card-body">
+                <h5 class="card-title">Mesa redonda: Conhecimento Críticos</h5>
+                <p class="card-text">Caso 1: Mapeamento do Conhecimento Crítico - AVIBRAS
+                  <br>Caso 2: O uso do mapeamento do conhecimento crítico como estratégia de avaliação do nível de prontidão na área hospitalar - Hospital Albert Einstein</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/4.png" data-plyr-embed-id="jHGl5gwP_dI"></div>
+              <div class="card-body">
+                <h5 class="card-title">Trilha de Casos: GC no Setor Bancário</h5>
+                <p class="card-text">Caso 1: Mentoria Técnica na Inspetoria GC do Banco  Bradesco
+                  <br>Caso 2: Soluções para identificação e localização de talentos e planejamentos no Banco Central do Brasil</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+
+
+      </div>
+
+
       <footer class="footer" style="background-color: black;">
         <div class="container-fluid footer-content">
           <h6>Sociedade Brasileira de Gestão do Conhecimento</h6>
@@ -70,6 +131,8 @@
 
 
     <!-- Optional JavaScript -->
+    <!-- plyr JavaScript -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -80,6 +143,15 @@
         $('#programa').contents().find("head").append($("<style type='text/css'>.birdseye-header{display:none;}</style>"));
       });
     </script>
+    <script>
+      var players = Array.from(document.querySelectorAll('.js-player'));
 
+      players.forEach(function(el, i) {
+        const player = new Plyr(el);
+        player.on('play', (evt) => {
+          console.log(evt.target)
+        })
+      })
+    </script>
   </body>
 </html>
