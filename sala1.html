@@ -90,7 +90,33 @@
       </div>
     </div>
 
-
+    <!--
+    <script>    
+      // Escondendo a barra de reprodução
+      progressElementTarget = document.querySelector(".plyr__progress");
+      progressElementTarget.style = "display: none;";
+  
+      // Escondendo o número da barra de reprodução
+      progressNumberElementTarget = document.querySelector(".plyr__time--current"); 
+      progressNumberElementTarget.style = "display: none;";
+  
+      // Bolinha vermelha do AO VIVO
+      aoVivoRedElement = document.createElement("SPAN");
+      aoVivoRedElement.style = "color: red;";
+      aoVivoRedElement.textContent = "●";
+  
+      // Criando o Elemento AO VIVO
+      newAovivoElement = document.createElement("DIV");
+      newAovivoElement.class= "plyr__controls__item plyr__time";
+      newAovivoElement.textContent = " AO VIVO";
+      newAovivoElement.insertBefore(aoVivoRedElement, newAovivoElement.childNodes[0]);
+  
+      // Encontrando a DIV dos controles
+      targetInsertAoVivo = document.querySelector(".plyr__controls");
+      // Inserindo o elemento AO VIVO
+      targetInsertAoVivo.insertBefore(newAovivoElement, targetInsertAoVivo.childNodes[3]);
+      </script>
+    -->
 
     <!-- Optional JavaScript -->
     <!-- plyr JavaScript -->
