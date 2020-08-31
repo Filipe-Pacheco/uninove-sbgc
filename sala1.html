@@ -11,6 +11,9 @@
     <!--Custom CSS-->
     <link rel="stylesheet" type="text/css" href="sala-style.css">
 
+     <!-- plyr CSS -->
+     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css"/>
+
     <title>Hello, world!</title>
 
 
@@ -38,47 +41,9 @@
 
       <div class="container player-wrapper mt-md-5 mt-0 p-3" >
         <div class="row" id="player-row">
-          <div class="col-md-8 order-1 mt-4 player-wrap"  >
-
-            <div class="row" style="height: 90%;" id="janela">
-              <div class="col-12 teste-video" onClick="togglePlayer()"  id="overlay" style="display: none;">
-                <div class="col text-pause-video">
-                  <div class="row justify-content-center"><p>VÍDEO PAUSADO</p></div>
-                  <div class="row justify-content-center" onclick="togglePlayer()">
-                    <svg class="play-icon" onclick="togglePlayer()" id="control-play2" viewBox="0 0 16 16" class="bi bi-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                    </svg>
-                  </div>
-                  <p>Clique na tela para continuar assistindo</p>
-                </div>
-              </div>
-
-              <div class="col-12" id="player">
-              </div>
-
-              <div class="col-12 control-bar" style="height: auto;">
-                <div class="row justify-content-center">
-                  <button class="btn btn-light" onclick="togglePlayer()">
-                      <img src="icons/pause.svg" id="control-play" height="auto">
-                  </button>
-                  <a class="btn btn-light" onclick="toggleMute();">
-                    <img  src="icons/volume-on.svg" id="volume-btn">
-                  </a>
-                  <button class="btn btn-light">
-                    <input type="range" min="0" max="100" value="100" class="slider form-control-range" id="myRange">
-                  </button>
-                  <a class="btn btn-light" onclick="toggleFullScreen();">
-                  <img  src="icons/fullscreen.svg" id="fullscreen-btn">
-                  </a>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
+          
+          <div class="col-md-8 order-1 mb-4 mt-4">
+            <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="_VwHJkhxznU"></div>
           </div>
 
           <div class="col-md-4 order-md-1">
@@ -128,10 +93,14 @@
 
 
     <!-- Optional JavaScript -->
-    <script src="script-sala.js"></script>
+    <!-- plyr JavaScript -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>/script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+      const player = new Plyr('#player');
+    </script>
   </body>
 </html>

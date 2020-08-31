@@ -176,8 +176,8 @@ body {
   .ref-sala-5 {
     display: none;
   }
-  .js-player{
-    
+  .card {
+    --plyr-color-main: #265785;
   }
 
   /* Extra Small */
@@ -198,7 +198,7 @@ body {
       width: 80%;
     }
     .hero-title {
-    padding-top: 130px
+    padding-top: 130px;
     }
   }
         /* Small */
